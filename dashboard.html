@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-image: url("Dashboard.jpg");
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        } 
+
+        h1, h2 {
+            color: #007bff; /* Blue color */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard</h1>
+        <p>Welcome, {{ session['username'] }}!</p>
+        <h2>Time Logs</h2>
+        <ul>
+            {% for log in time_logs %}
+            <li>{{ log['date'] }} - {{ log['hours'] }} hours</li>
+            {% endfor %}
+        </ul>
+        <p><a href="log_time.html">Log Time</a></p>
+        <p><a href="logout.html">Logout</a></p>
+    </div>
+</body>
+</html>

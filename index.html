@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-image: url("Dashboard.jpg");
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center; /* Center text within the container */
+        } 
+
+        h1, h2 {
+            color: #ff00d4; /* Pink color */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #140e05;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Additional styles for club specific content */
+        .club-logo {
+            max-width: 200px;
+            display: block;
+            margin: 0 auto 20px; /* Center the image and add margin */
+        }
+
+        .club-description {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* Style for positioning links */
+        .link-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px; /* Add some space above the links */
+        }
+
+        /* Style for individual links */
+        .link {
+            flex-grow: 1;
+            margin-right: 10px; /* Add space between buttons */
+        }
+
+        /* Style for larger buttons */
+        .link a {
+            display: block;
+            padding: 15px 25px; /* Adjust padding for larger size */
+            background-color: #e66778;
+            border-radius: 5px; /* Add rounded corners */
+            text-align: center;
+            transition: background-color 0.3s ease; /* Add transition effect */
+        }
+
+        /* Hover effect for buttons */
+        .link a:hover {
+            background-color: #80ecff; /* Lighter color on hover */
+        }
+
+        /* Style for login button */
+        .login-button {
+            text-align: center; /* Center the button */
+            margin-top: 20px; /* Add space above the button */
+        }
+
+        .login-button a {
+            display: inline-block;
+            padding: 15px 25px; /* Adjust padding for larger size */
+            background-color: #3b5998; /* Facebook blue color */
+            color: #fff; /* White text color */
+            border-radius: 5px; /* Add rounded corners */
+            text-decoration: none; /* Remove underlines */
+            transition: background-color 0.3s ease; /* Add transition effect */
+        }
+
+        .login-button a:hover {
+            background-color: #4c68d7; /* Darker blue color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Club Logo -->
+        <img class="club-logo" src="club_logo.jpg" alt="Club Logo">
+
+        <!-- Club Name and Description -->
+        <h1>RKPS CLUB</h1>
+        <p class="club-description">Welcome to our club RKPS</p> <!-- Added closing tag -->
+
+        <!-- Links to other pages -->
+        <div class="link-container">
+            <div class="link">
+                <a href="event_calendar.html">View Event Calendar</a>
+            </div>
+            <div class="link">
+                <a href="membership.html">Membership Information</a>
+            </div>
+            <div class="link">
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- Login button -->
+        <div class="login-button">
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+</body>
+</html>
